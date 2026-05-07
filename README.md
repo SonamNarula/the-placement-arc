@@ -10,7 +10,7 @@
 
 ![Status](https://img.shields.io/badge/STATUS-Arc%20In%20Progress-ffffff?style=flat-square&labelColor=000000)
 ![Goal](https://img.shields.io/badge/GOAL-Dream%20Company-ffffff?style=flat-square&labelColor=000000)
-![Era](https://img.shields.io/badge/CRT-2026-ffffff?style=flat-square&labelColor=000000)
+![CRT](https://img.shields.io/badge/CRT-2026-ffffff?style=flat-square&labelColor=000000)
 ![Mode](https://img.shields.io/badge/MODE-Grind%20ON-ffffff?style=flat-square&labelColor=000000)
 
 </div>
@@ -30,8 +30,20 @@
 
 ---
 
-## Current Focus
-- C++ Basics
+## 📋 Daily Test Reports
+
+> All reports → [`/daily-tests`](./daily-tests/)
+
+| Test | Date | Topic | Score | % | Grade |
+|------|------|-------|-------|---|-------|
+| [CBT-01](./daily-tests/CBT-01.md) | 2 May 2026 | C Programming Basics | 40 / 45 | 88.9% | A |
+| [CBT-02](./daily-tests/CBT-02.md) | 2 May 2026 | C Programming Basics | 44 / 45 | 97.8% | A+ |
+| [CBT-03](./daily-tests/CBT-03.md) | 4 May 2026 | Daily Test | 44 / 45 | 97.8% | A+ |
+| [CBT-04](./daily-tests/CBT-04.md) | 5 May 2026 | Daily Test | 43 / 45 | 95.6% | A+ |
+| [CBT-05](./daily-tests/CBT-05.md) | 6 May 2026 | FOP Daily Test | 39 / 45 | 86.7% | A |
+| [CBT-06](./daily-tests/CBT-06.md) | 7 May 2026 | OOPS Daily Test | 45 / 45 | 100% | A+ |
+
+**Average : 92.6%** &nbsp;|&nbsp; **All Qualified ✅** &nbsp;|&nbsp; **Best : CBT-06 — 100% 🔥**
 
 ---
 
