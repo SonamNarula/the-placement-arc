@@ -12,7 +12,7 @@
 SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 ```
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&pause=1500&color=8E8E93&center=true&vCenter=true&width=600&height=30&lines=8+assessments+completed.+8+qualified.+0+excuses.;C%2B%2B+%E2%86%92+DSA+%E2%86%92+Core+CS+%E2%86%92+Interview+%E2%86%92+Offer.;This+repository+does+not+track+attendance.+It+tracks+progress.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&pause=1500&color=8E8E93&center=true&vCenter=true&width=600&height=30&lines=9+assessments+completed.+9+qualified.+0+excuses.;C%2B%2B+%E2%86%92+DSA+%E2%86%92+Core+CS+%E2%86%92+Interview+%E2%86%92+Offer.;This+repository+does+not+track+attendance.+It+tracks+progress.)](https://git.io/typing-svg)
 
 </div>
 
@@ -22,9 +22,9 @@ SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 
 ![](https://img.shields.io/badge/STATUS-ACTIVE-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
-![](https://img.shields.io/badge/ASSESSMENTS-8%20%2F%208%20QUALIFIED-e5e5ea?style=flat-square&labelColor=2c2c2e)
+![](https://img.shields.io/badge/ASSESSMENTS-9%20%2F%209%20QUALIFIED-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
-![](https://img.shields.io/badge/AVERAGE-95.3%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
+![](https://img.shields.io/badge/AVERAGE-94.8%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
 ![](https://img.shields.io/badge/BEST-100%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
 
@@ -38,8 +38,8 @@ SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 
 ```
   ══════════════════════════════════════════════════════════
-   PHASE 01   C++ & OOP                       IN PROGRESS
-   PHASE 02   Data Structures & Algorithms        LOCKED
+   PHASE 01   C++ & OOP                         COMPLETED
+   PHASE 02   Data Structures & Algorithms     IN PROGRESS
    PHASE 03   Core CS  ·  DBMS  ·  OS  ·  CN     LOCKED
    PHASE 04   Aptitude & Reasoning                LOCKED
    PHASE 05   Interview Preparation               LOCKED
@@ -66,6 +66,7 @@ SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 | 06 | [CBT-06](./daily-tests/CBT-06.md) | 07 May 2026 | OOPS Daily Test | `45 / 45` | 100.0% | **A+** |
 | 07 | [CBT-07](./daily-tests/CBT-07.md) | 08 May 2026 | OOPS Daily Test | `45 / 45` | 100.0% | **A+** |
 | 08 | [CBT-08](./daily-tests/CBT-08.md) | 09 May 2026 | OOPS Daily Test | `43 / 45` | 95.6% | **A+** |
+| 09 | [CBT-09](./daily-tests/CBT-09.md) | 10 May 2026 | DSA Daily Test | `41 / 45` | 91.1% | **A+** |
 
 </div>
 
