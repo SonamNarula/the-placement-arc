@@ -12,7 +12,7 @@
 SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 ```
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&pause=1500&color=8E8E93&center=true&vCenter=true&width=600&height=30&lines=10+assessments+completed.+10+qualified.+0+excuses.;C%2B%2B+%E2%86%92+DSA+%E2%86%92+Core+CS+%E2%86%92+Interview+%E2%86%92+Offer.;This+repository+does+not+track+attendance.+It+tracks+progress.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&pause=1500&color=8E8E93&center=true&vCenter=true&width=600&height=30&lines=11+assessments+completed.+11+qualified.+0+excuses.;C%2B%2B+%E2%86%92+DSA+%E2%86%92+Core+CS+%E2%86%92+Interview+%E2%86%92+Offer.;This+repository+does+not+track+attendance.+It+tracks+progress.)](https://git.io/typing-svg)
 
 </div>
 
@@ -22,9 +22,9 @@ SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 
 ![](https://img.shields.io/badge/STATUS-ACTIVE-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
-![](https://img.shields.io/badge/ASSESSMENTS-10%20%2F%2010%20QUALIFIED-e5e5ea?style=flat-square&labelColor=2c2c2e)
+![](https://img.shields.io/badge/ASSESSMENTS-11%20%2F%2011%20QUALIFIED-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
-![](https://img.shields.io/badge/AVERAGE-93.8%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
+![](https://img.shields.io/badge/AVERAGE-93.3%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
 ![](https://img.shields.io/badge/BEST-100%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
 
@@ -67,7 +67,8 @@ SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 | 07 | [CBT-07](./daily-tests/CBT-07.md) | 08 May 2026 | OOPS Daily Test | `45 / 45` | 100.0% | **A+** |
 | 08 | [CBT-08](./daily-tests/CBT-08.md) | 09 May 2026 | OOPS Daily Test | `43 / 45` | 95.6% | **A+** |
 | 09 | [CBT-09](./daily-tests/CBT-09.md) | 10 May 2026 | DSA Daily Test | `41 / 45` | 91.1% | **A+** |
-| 10 | [CBT-10](./daily-tests/CBT-10.md) | 11 May 2026 | Daily Test | `38 / 45` | 84.4% | **A** |
+| 10 | [CBT-10](./daily-tests/CBT-10.md) | 11 May 2026 | DSA Daily Test | `38 / 45` | 84.4% | **A** |
+| 11 | [CBT-11](./daily-tests/CBT-11.md) | 12 May 2026 | DSA Daily Test | `40 / 45` | 88.9% | **A** |
 
 </div>
 
