@@ -12,7 +12,7 @@
 SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 ```
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&pause=1500&color=8E8E93&center=true&vCenter=true&width=600&height=30&lines=13+assessments+completed.+13+qualified.+0+excuses.;C%2B%2B+%E2%86%92+DSA+%E2%86%92+Core+CS+%E2%86%92+Interview+%E2%86%92+Offer.;This+repository+does+not+track+attendance.+It+tracks+progress.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&pause=1500&color=8E8E93&center=true&vCenter=true&width=600&height=30&lines=15+assessments+completed.+15+qualified.+0+excuses.;C%2B%2B+%E2%86%92+DSA+%E2%86%92+Core+CS+%E2%86%92+Interview+%E2%86%92+Offer.;This+repository+does+not+track+attendance.+It+tracks+progress.)](https://git.io/typing-svg)
 
 </div>
 
@@ -22,9 +22,9 @@ SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 
 ![](https://img.shields.io/badge/STATUS-ACTIVE-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
-![](https://img.shields.io/badge/ASSESSMENTS-13%20%2F%2013%20QUALIFIED-e5e5ea?style=flat-square&labelColor=2c2c2e)
+![](https://img.shields.io/badge/ASSESSMENTS-15%20%2F%2015%20QUALIFIED-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
-![](https://img.shields.io/badge/AVERAGE-94.2%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
+![](https://img.shields.io/badge/AVERAGE-94.4%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
 &nbsp;
 ![](https://img.shields.io/badge/BEST-100%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
 
@@ -71,6 +71,8 @@ SONAM NARULA  ·  23BCON0190  ·  JECRC UNIVERSITY
 | 11 | [CBT-11](./daily-tests/CBT-11.md) | 12 May 2026 | DSA Daily Test | `40 / 45` | 88.9% | **A** |
 | 12 | [CBT-12](./daily-tests/CBT-12.md) | 13 May 2026 | DSA Daily Test | `44 / 45` | 97.8% | **A+** |
 | 13 | [CBT-13](./CBT%2013.png) | 14 May 2026 | DSA Daily Test | `45 / 45` | 100.0% | **A+** |
+| 14 | [CBT-14](./CBT%2014.png) | 15 May 2026 | Linked List | `43 / 45` | 95.6% | **A+** |
+| 15 | [CBT-15](./CBT%2015.png) | 16 May 2026 | DSA Daily Test | `43 / 45` | 95.6% | **A+** |
 
 </div>
 
