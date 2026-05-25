@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int arr[10][10], rows, cols;
-
+// dfghjkl
     cout << "Enter rows and columns: ";
     cin >> rows >> cols;
 
