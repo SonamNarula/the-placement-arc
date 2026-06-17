@@ -2,27 +2,23 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:ff2d75,100:000000&height=190&section=header&text=THE%20PLACEMENT%20ARC&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=alpha%20energy%20%C2%B7%20zero%20apologies%20%C2%B7%20one%20deploy%20target&descSize=13&descAlignY=58&descColor=ffd1e3" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1c1c1e,50:2c2c2e,100:3a3a3c&height=180&section=header&text=THE%20PLACEMENT%20ARC&fontSize=40&fontColor=e5e5ea&animation=fadeIn&fontAlignY=45&desc=CSE%206M%202027%20%C2%B7%20CRT%202026%20%C2%B7%20one%20deploy%20target%3A%20the%20offer&descSize=13&descAlignY=68&descColor=636366" />
 
-### not nervous. just optimized.
+### still compiling. one day at a time.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=14&pause=2200&color=FF2D75&center=true&vCenter=true&width=750&height=30&lines=alpha+energy%2C+zero+apologies.;confidence%3A+compiled+successfully.;soft+launch%3F+never+heard+of+her.;one+deploy+target%3A+offer_letter.json.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&pause=2200&color=8E8E93&center=true&vCenter=true&width=750&height=30&lines=batches+change.+the+routine+doesn%27t.;confidence%3A+compiled+successfully.;fifteen+tests+logged.+zero+skipped.;one+deploy+target%3A+offer_letter.json.)](https://git.io/typing-svg)
 
 **Sonam Narula** · B.Tech CSE '27 · JECRC University
 
 <br/>
 
-![pipeline](https://img.shields.io/badge/pipeline-passing-ff2d75?style=flat-square&logo=githubactions&logoColor=white&labelColor=1a1a1a)
-&nbsp;![batch](https://img.shields.io/badge/batch-alpha--m-ffd700?style=flat-square&labelColor=1a1a1a)
-&nbsp;![rank](https://img.shields.io/badge/rank-top__tier-ffd700?style=flat-square&labelColor=1a1a1a)
-&nbsp;![builds](https://img.shields.io/badge/builds-15%2F15_green-ff2d75?style=flat-square&labelColor=1a1a1a)
-&nbsp;![coverage](https://img.shields.io/badge/coverage-94.4%25-ff2d75?style=flat-square&labelColor=1a1a1a)
-&nbsp;![day](https://img.shields.io/badge/day-047-1a1a1a?style=flat-square)
+![pipeline](https://img.shields.io/badge/pipeline-passing-e5e5ea?style=flat-square&logo=githubactions&logoColor=1c1c1e&labelColor=2c2c2e)
+&nbsp;![batch](https://img.shields.io/badge/batch-6m%20%E2%86%92%20alpha--m-e5e5ea?style=flat-square&labelColor=2c2c2e)
+&nbsp;![builds](https://img.shields.io/badge/builds-15%2F15_green-e5e5ea?style=flat-square&labelColor=2c2c2e)
+&nbsp;![coverage](https://img.shields.io/badge/coverage-94.4%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
+&nbsp;![day](https://img.shields.io/badge/day-047-e5e5ea?style=flat-square&labelColor=2c2c2e)
 
-<br/>
-
-**alpha-m is the top batch. there's no tier above it.**
-**it still isn't the goal — the offer letter is.**
+<sub>pool upgraded to alpha-m — top tier, no rank above it. target unchanged: offer_letter.json.</sub>
 
 </div>
 
@@ -39,7 +35,7 @@ pipeline:
   owner: Sonam Narula
   repo: the-placement-arc
   branch: placement/CRT-2026
-  runner_pool: alpha-m          # top tier — promoted from standard-6m. still not the target.
+  runner_pool: alpha-m          # promoted from standard-6m. still not the target.
   current_stage: dsa-tests
   day: 47
   target: offer_letter.json     # the only field that actually matters
@@ -76,15 +72,15 @@ note: runner pools aren't requested. they're computed
 <br/>
 
 ```
-┌────────────────────────────────────────────────────────┐
-│  LESSON LOGGED                                         │
-│                                                        │
-│  alpha-m is the top batch. there's no tier above it.   │
-│  and it still isn't the finish line.                   │
-│                                                        │
-│  batches are checkpoints. they don't get a victory lap.│
-│  the only deploy that counts is the offer letter.      │
-└────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────┐
+│  LESSON LOGGED                                           │
+│                                                          │
+│  alpha-m is the top batch. there's no tier above it.     │
+│  and it still isn't the finish line.                     │
+│                                                          │
+│  batches are checkpoints. they don't get a victory lap.  │
+│  the only deploy that counts is the offer letter.        │
+└──────────────────────────────────────────────────────────┘
 ```
 
 <br/>
@@ -127,7 +123,8 @@ note: runner pools aren't requested. they're computed
 
 # runner_pool was never a hardcoded value in the config — it's
 # derived from build_history on every push. standard-6m to
-# alpha-m wasn't granted by anyone. it was computed.
+# alpha-m wasn't granted by anyone. it was computed, and the
+# config doesn't treat it as an achievement field.
 
 # there's no retry_limit set on effort here. only on patience,
 # and that's still being tuned.
@@ -138,9 +135,6 @@ note: runner pools aren't requested. they're computed
 # the only failure mode this pipeline actually has is the
 # quiet kind — the one where it just stops running. that
 # hasn't happened in 47 days, and it isn't scheduled to.
-
-# confidence was never a metric this pipeline waited to feel —
-# it shipped first, felt sure after.
 
 # being the loudest build in the room was never the goal.
 # being the one still running when review starts was.
@@ -183,10 +177,10 @@ note: runner pools aren't requested. they're computed
 
 ## build environment
 
-![C++](https://img.shields.io/badge/C%2B%2B-1a1a1a?style=flat-square&logo=cplusplus&logoColor=white)
-&nbsp;![Git](https://img.shields.io/badge/Git-1a1a1a?style=flat-square&logo=git&logoColor=white)
-&nbsp;![GitHub](https://img.shields.io/badge/GitHub-1a1a1a?style=flat-square&logo=github&logoColor=white)
-&nbsp;![VS Code](https://img.shields.io/badge/VS%20Code-1a1a1a?style=flat-square&logo=visualstudiocode&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-2c2c2e?style=flat-square&logo=cplusplus&logoColor=e5e5ea)
+&nbsp;![Git](https://img.shields.io/badge/Git-2c2c2e?style=flat-square&logo=git&logoColor=e5e5ea)
+&nbsp;![GitHub](https://img.shields.io/badge/GitHub-2c2c2e?style=flat-square&logo=github&logoColor=e5e5ea)
+&nbsp;![VS Code](https://img.shields.io/badge/VS%20Code-2c2c2e?style=flat-square&logo=visualstudiocode&logoColor=e5e5ea)
 
 <br/>
 
@@ -212,6 +206,6 @@ note: runner pools aren't requested. they're computed
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:ff2d75,100:000000&height=120&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3a3a3c,50:2c2c2e,100:1c1c1e&height=60&section=footer&animation=fadeIn" />
 
 </div>
