@@ -2,79 +2,18 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:000000&height=220&section=header&text=The%20Placement%20Arc%20of%20Sonam%20Narula&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=46&desc=Online%20Judge%20%E2%80%A2%20Submission%20Dashboard%20%E2%80%A2%20JECRC%20%E2%80%A2%20CRT%202026&descSize=12&descAlignY=68&descColor=444444" />
+# The Placement Arc
+### one deploy target. everything else is just a metric.
 
-</div>
-
-<br/>
-
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=13&pause=2000&color=FFFFFF&center=true&vCenter=true&width=740&height=25&lines=15+submissions.+15+ACCEPTED.+Division+upgraded%3A+6M+%E2%86%92+Alpha-M.;Current+problem%3A+DSA+%C2%B7+Status%3A+RUNNING+%C2%B7+Day+047.;Time+complexity+of+giving+up%3A+O(regret).+Approach%3A+Rejected.;Space+complexity+of+excuses%3A+O(%E2%88%9E).+Not+allocated.;The+final+ACCEPTED+prints+when+the+offer+letter+does.)](https://git.io/typing-svg)
-
-</div>
+**Sonam Narula** · B.Tech CSE '27 · JECRC University
 
 <br/>
 
----
-
-<br/>
-
-```
-  ┌──────────────────────────────────────────────────────────────────┐
-  │                                                                  │
-  │   user-id     23BCON0190                                         │
-  │   institute   JECRC University  ·  CSE  ·  2027                 │
-  │   division    ALPHA-M  [promoted from 6M]                        │
-  │   phase       Round 2  ·  Data Structures & Algorithms           │
-  │   day         047                                                │
-  │   target      PLACEMENT_AT_SCALE.cpp  →  ACCEPTED               │
-  │                                                                  │
-  └──────────────────────────────────────────────────────────────────┘
-```
-
-<br/>
-
----
-
-<br/>
-
-## ◆ DIVISION CHANGE
-
-```
-> RATING UPDATE DETECTED
->
->   Previous Division  :  6M         [Standard Entry · CRT 2026]
->   Current  Division  :  ALPHA-M    [Top Batch · Earned Access]
->
->   Trigger  :  15 / 15 ACCEPTED
->               Average Accuracy  →  94.4%
->               Perfect Scores    →  3×
->
->   Note     : You don't "get" moved to Alpha-M.
->              You compute your way there.
->              The system just confirms it.
-```
-
-<br/>
-
----
-
-<br/>
-
-## ◆ LIVE VERDICT
-
-<div align="center">
-
-![DIVISION](https://img.shields.io/badge/DIVISION-ALPHA--M-ffffff?style=flat-square&labelColor=000000)
-&nbsp;&nbsp;
-![SUBMISSIONS](https://img.shields.io/badge/SUBMISSIONS-15%20%2F%2015%20AC-ffffff?style=flat-square&labelColor=000000)
-&nbsp;&nbsp;
-![AVG](https://img.shields.io/badge/AVG%20ACC-94.4%25-ffffff?style=flat-square&labelColor=000000)
-&nbsp;&nbsp;
-![PERFECT](https://img.shields.io/badge/PERFECT-3%C3%97-ffffff?style=flat-square&labelColor=000000)
-&nbsp;&nbsp;
-![DAY](https://img.shields.io/badge/DAY-047-ffffff?style=flat-square&labelColor=000000)
+![pipeline](https://img.shields.io/badge/pipeline-passing-2ea44f?style=flat-square&logo=githubactions&logoColor=white&labelColor=1a1a1a)
+&nbsp;![runner](https://img.shields.io/badge/runner__pool-alpha--m-1a1a1a?style=flat-square)
+&nbsp;![builds](https://img.shields.io/badge/builds-15%2F15_green-2ea44f?style=flat-square&labelColor=1a1a1a)
+&nbsp;![coverage](https://img.shields.io/badge/coverage-94.4%25-2ea44f?style=flat-square&labelColor=1a1a1a)
+&nbsp;![day](https://img.shields.io/badge/day-047-1a1a1a?style=flat-square)
 
 </div>
 
@@ -84,35 +23,18 @@
 
 <br/>
 
-## ◆ APPROACH.cpp
+## `pipeline.config`
 
-```cpp
-/*
- * APPROACH.cpp  —  core logic for PLACEMENT_AT_SCALE
- *
- * OBSERVATION 1 :
- *     No zero days → no gaps in the submission log.
- *     Consistency is O(1) per day. It compounds to O(n).
- *
- * OBSERVATION 2 :
- *     The batch is a variable, not a constant.
- *     6M was assigned. ALPHA-M was computed.
- *
- * OBSERVATION 3 :
- *     Hard work has no time complexity ceiling.
- *     Effort doesn't get TLE'd.
- *
- * OBSERVATION 4 :
- *     Tests are checkpoints — not verdicts on character.
- *     One score is a sample. Fifteen in a row is a dataset.
- *
- * OBSERVATION 5 :
- *     The only thing that causes a real TLE
- *     is choosing comfort over the next problem.
- *
- * TIME COMPLEXITY   :  O(n · discipline)
- * SPACE COMPLEXITY  :  O(1)  — no room for excuses
- */
+```yaml
+pipeline:
+  owner: Sonam Narula
+  repo: the-placement-arc
+  branch: placement/CRT-2026
+  runner_pool: alpha-m          # promoted from: standard-6m — not the target, just telemetry
+  current_stage: dsa-tests
+  day: 47
+  target: offer_letter.json     # the only field that actually matters
+  status: building
 ```
 
 <br/>
@@ -121,24 +43,24 @@
 
 <br/>
 
-## ◆ PROBLEM SET
+## event log — runner pool upgrade (side-effect, not the target)
 
 ```
-  PROBLEM SET  :  THE PLACEMENT ARC  ·  CRT 2026
-  ─────────────────────────────────────────────────────────────────
+$ ci-bot --event runner-promotion
 
-    Round 1   C++ Fundamentals & OOP              [ACCEPTED]   ✓
-    ─────────────────────────────────────────────────────────────
-    Round 2   Data Structures & Algorithms        [ RUNNING]   ▶
-    Round 3   Core CS  ·  DBMS  ·  OS  ·  CN     [ QUEUED ]   ·
-    Round 4   Aptitude & Reasoning                [ QUEUED ]   ·
-    Round 5   Interview Preparation               [ QUEUED ]   ·
-    ─────────────────────────────────────────────────────────────
-    FINAL     Placement Offer                     [ PENDING]   ?
+[2026-05-16 09:00]  EVENT  runner_pool.upgrade
+  from   : standard-6m
+  to     : alpha-m
+  reason : 15 consecutive green builds
+           mean coverage 94.4%
+           3 builds at 100% coverage
 
-    SIDE OP   German Language                     [ ONGOING]   ~
+note: runner pools aren't requested. they're computed
+      from build history on every push. this one just
+      ran the numbers and moved itself.
 
-  ─────────────────────────────────────────────────────────────────
+      but the deploy target hasn't changed. it never was
+      "alpha-m." it's still offer_letter.json.
 ```
 
 <br/>
@@ -147,29 +69,24 @@
 
 <br/>
 
-## ◆ SUBMISSION LOG
+## pipeline stages
 
-<div align="center">
+```
+ ┌────────────┐    ┌────────────┐    ┌────────────┐    ┌────────────┐    ┌────────────┐
+ │  STAGE 1   │ →  │  STAGE 2   │ →  │  STAGE 3   │ →  │  STAGE 4   │ →  │  STAGE 5   │
+ │  C++ & OOP │    │    DSA     │    │  Core CS   │    │  Aptitude  │    │ Interview  │
+ │  ✓ PASSED  │    │  ▶ RUNNING │    │  ⋯ QUEUED  │    │  ⋯ QUEUED  │    │  ⋯ QUEUED  │
+ └────────────┘    └────────────┘    └────────────┘    └────────────┘    └────────────┘
+                                                                                 │
+                                                                                 ▼
+                                                                       ┌──────────────────┐
+                                                                       │   DEPLOY: PROD    │
+                                                                       │  offer_letter.json│
+                                                                       │   ⋯ PENDING       │
+                                                                       └──────────────────┘
 
-| # | ID | Date | Problem | Score | Acc. | Verdict |
-|:-:|:---|:----:|:--------|:-----:|:----:|:-------:|
-| 01 | [CBT-01](./daily-tests/CBT-01.md) | 02 May 2026 | C Programming Basics | `40 / 45` | 95.2% | **ACCEPTED** |
-| 02 | [CBT-02](./daily-tests/CBT-02.md) | 02 May 2026 | C Programming Basics | `44 / 45` | 97.8% | **ACCEPTED** |
-| 03 | [CBT-03](./daily-tests/CBT-03.md) | 04 May 2026 | Daily Test | `44 / 45` | 97.8% | **ACCEPTED** |
-| 04 | [CBT-04](./daily-tests/CBT-04.md) | 05 May 2026 | Daily Test | `43 / 45` | 95.6% | **ACCEPTED** |
-| 05 | [CBT-05](./daily-tests/CBT-05.md) | 06 May 2026 | FOP Daily Test | `39 / 45` | 86.7% | **ACCEPTED** |
-| 06 | [CBT-06](./daily-tests/CBT-06.md) | 07 May 2026 | OOP Daily Test | `45 / 45` | 100.0% | **ACCEPTED ◆** |
-| 07 | [CBT-07](./daily-tests/CBT-07.md) | 08 May 2026 | OOP Daily Test | `45 / 45` | 100.0% | **ACCEPTED ◆** |
-| 08 | [CBT-08](./daily-tests/CBT-08.md) | 09 May 2026 | OOP Daily Test | `43 / 45` | 95.6% | **ACCEPTED** |
-| 09 | [CBT-09](./daily-tests/CBT-09.md) | 10 May 2026 | DSA Daily Test | `41 / 45` | 91.1% | **ACCEPTED** |
-| 10 | [CBT-10](./daily-tests/CBT-10.md) | 11 May 2026 | DSA Daily Test | `38 / 45` | 84.4% | **ACCEPTED** |
-| 11 | [CBT-11](./daily-tests/CBT-11.md) | 12 May 2026 | DSA Daily Test | `40 / 45` | 88.9% | **ACCEPTED** |
-| 12 | [CBT-12](./daily-tests/CBT-12.md) | 13 May 2026 | DSA Daily Test | `44 / 45` | 97.8% | **ACCEPTED** |
-| 13 | [CBT-13](./CBT%2013.png) | 14 May 2026 | DSA Daily Test | `45 / 45` | 100.0% | **ACCEPTED ◆** |
-| 14 | [CBT-14](./CBT%2014.png) | 15 May 2026 | Linked List | `43 / 45` | 95.6% | **ACCEPTED** |
-| 15 | [CBT-15](./CBT%2015.png) | 16 May 2026 | DSA Daily Test | `43 / 45` | 95.6% | **ACCEPTED** |
-
-</div>
+ async job  →  german_language.service ··· RUNNING (background)
+```
 
 <br/>
 
@@ -177,19 +94,66 @@
 
 <br/>
 
-## ◆ ENV
+## `notes.yml` — why this pipeline doesn't break
 
-<div align="center">
+```yaml
+# a build pipeline has no concept of "bad days," only builds
+# that ran and builds that didn't. this one has run every
+# single day. zero skipped jobs, zero --force-skip.
 
-![C++](https://img.shields.io/badge/C%2B%2B-ffffff?style=flat-square&logo=cplusplus&logoColor=000000)
-&nbsp;
-![Git](https://img.shields.io/badge/Git-ffffff?style=flat-square&logo=git&logoColor=000000)
-&nbsp;
-![GitHub](https://img.shields.io/badge/GitHub-ffffff?style=flat-square&logo=github&logoColor=000000)
-&nbsp;
-![VS Code](https://img.shields.io/badge/VS%20Code-ffffff?style=flat-square&logo=visualstudiocode&logoColor=000000)
+# runner_pool was never a hardcoded value in the config — it's
+# derived from build_history on every push. standard-6m to
+# alpha-m wasn't granted by anyone. it was computed.
 
-</div>
+# there's no retry_limit set on effort here. only on patience,
+# and that's still being tuned.
+
+# one test score is a sample size of one. fifteen green builds
+# in a row, averaging 94.4%, is a distribution you can trust.
+
+# the only failure mode this pipeline actually has is the
+# quiet kind — the one where it just stops running. that
+# hasn't happened in 47 days, and it isn't scheduled to.
+```
+
+<br/>
+
+---
+
+<br/>
+
+## build history
+
+| Build | Date | Job | Score | Coverage | Status |
+|:-:|:--|:--|:-:|:-:|:-:|
+| `#001` | 02 May 2026 | [C Programming Basics](./daily-tests/CBT-01.md) | 40 / 45 | 95.2% | **PASS** |
+| `#002` | 02 May 2026 | [C Programming Basics](./daily-tests/CBT-02.md) | 44 / 45 | 97.8% | **PASS** |
+| `#003` | 04 May 2026 | [Daily Test](./daily-tests/CBT-03.md) | 44 / 45 | 97.8% | **PASS** |
+| `#004` | 05 May 2026 | [Daily Test](./daily-tests/CBT-04.md) | 43 / 45 | 95.6% | **PASS** |
+| `#005` | 06 May 2026 | [FOP Daily Test](./daily-tests/CBT-05.md) | 39 / 45 | 86.7% | **PASS** |
+| `#006` | 07 May 2026 | [OOP Daily Test](./daily-tests/CBT-06.md) | 45 / 45 | 100.0% | **PASS ★** |
+| `#007` | 08 May 2026 | [OOP Daily Test](./daily-tests/CBT-07.md) | 45 / 45 | 100.0% | **PASS ★** |
+| `#008` | 09 May 2026 | [OOP Daily Test](./daily-tests/CBT-08.md) | 43 / 45 | 95.6% | **PASS** |
+| `#009` | 10 May 2026 | [DSA Daily Test](./daily-tests/CBT-09.md) | 41 / 45 | 91.1% | **PASS** |
+| `#010` | 11 May 2026 | [DSA Daily Test](./daily-tests/CBT-10.md) | 38 / 45 | 84.4% | **PASS** |
+| `#011` | 12 May 2026 | [DSA Daily Test](./daily-tests/CBT-11.md) | 40 / 45 | 88.9% | **PASS** |
+| `#012` | 13 May 2026 | [DSA Daily Test](./daily-tests/CBT-12.md) | 44 / 45 | 97.8% | **PASS** |
+| `#013` | 14 May 2026 | [DSA Daily Test](./CBT%2013.png) | 45 / 45 | 100.0% | **PASS ★** |
+| `#014` | 15 May 2026 | [Linked List](./CBT%2014.png) | 43 / 45 | 95.6% | **PASS** |
+| `#015` | 16 May 2026 | [DSA Daily Test](./CBT%2015.png) | 43 / 45 | 95.6% | **PASS** |
+
+<br/>
+
+---
+
+<br/>
+
+## build environment
+
+![C++](https://img.shields.io/badge/C%2B%2B-1a1a1a?style=flat-square&logo=cplusplus&logoColor=white)
+&nbsp;![Git](https://img.shields.io/badge/Git-1a1a1a?style=flat-square&logo=git&logoColor=white)
+&nbsp;![GitHub](https://img.shields.io/badge/GitHub-1a1a1a?style=flat-square&logo=github&logoColor=white)
+&nbsp;![VS Code](https://img.shields.io/badge/VS%20Code-1a1a1a?style=flat-square&logo=visualstudiocode&logoColor=white)
 
 <br/>
 
@@ -200,23 +164,17 @@
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║   division  : ALPHA-M                                            ║
-║   problem   : PLACEMENT_AT_SCALE                                 ║
-║   verdict   : SOLVING...                                         ║
-║                                                                  ║
-║   The final ACCEPTED prints when the offer letter does.          ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
+┌──────────────────────────────────────────────┐
+│  pipeline   : the-placement-arc              │
+│  stage      : dsa-tests (running)            │
+│  next_stage : core-cs                        │
+│  deploy     : pending → offer_letter.json    │
+│                                              │
+│  this pipeline doesn't have a "fail" state.  │
+│  only "not yet passing."                     │
+└──────────────────────────────────────────────┘
 ```
 
-<br/>
-
-<sub>15 / 15 AC &nbsp;·&nbsp; Average 94.4% &nbsp;·&nbsp; Zero DNFs &nbsp;·&nbsp; Built in consistency</sub>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:000000&height=40&section=footer"/>
+<sub>15 builds · 15 green · 0 skipped jobs · runner pool: alpha-m</sub>
 
 </div>
