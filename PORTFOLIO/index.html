@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonam Narula — Software Developer</title>
+  <meta name="description" content="Sonam Narula — Aspiring Software Developer. Web Development & DSA. Jaipur, India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon as inline SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CUSTOM CURSOR
+═══════════════════════════════════════════════════════════ -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SCROLL PROGRESS
+═══════════════════════════════════════════════════════════ -->
+<div id="scroll-progress"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LOADING SCREEN
+═══════════════════════════════════════════════════════════ -->
+<div id="loader">
+  <div class="loader-terminal" id="loader-terminal">
+    <div class="line">$ initializing portfolio.sh...</div>
+    <div class="line">$ loading modules: [html] [css] [javascript]</div>
+    <div class="line">$ compiling DSA knowledge base... ████ done</div>
+    <div class="line">$ mounting projects: 3 found</div>
+    <div class="line">$ running 200+ day streak check... <span style="color:#0f0">✓ active</span></div>
+    <div class="line">$ connecting to github.com/SonamNarula...</div>
+    <div class="line">$ build successful — no errors, no warnings</div>
+    <div class="line">$ <span style="color:#ffd166">ready. launching experience...</span></div>
+  </div>
+  <div class="loader-bar-wrap">
+    <div class="loader-bar"></div>
+  </div>
+  <div class="loader-pct" id="loader-pct">0%</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     DEVELOPER MODE OVERLAY
+═══════════════════════════════════════════════════════════ -->
+<div id="devmode-overlay">
+  <p>// DEVELOPER MODE ACTIVE</p>
+  <p><strong>Stack:</strong> HTML5, CSS3, Vanilla JS</p>
+  <p><strong>Architecture:</strong> Intersection Observer API, rAF-driven animations, Local Storage persistence</p>
+  <p><strong>Patterns:</strong> Progressive reveal, Parallax, Typed text, Terminal emulation, Modal system</p>
+  <p><strong>Performance:</strong> CSS containment, will-change, GPU compositing</p>
+  <p style="color:#0f0; margin-top:0.6rem">// All systems nominal</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">SN<span style="color:var(--accent)">.</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#about"     data-num="01">About</a></li>
+    <li><a href="#skills"    data-num="02">Skills</a></li>
+    <li><a href="#projects"  data-num="03">Projects</a></li>
+    <li><a href="#experience"data-num="04">Journey</a></li>
+    <li><a href="#terminal-section" data-num="05">Terminal</a></li>
+    <li><a href="#contact"   data-num="06">Contact</a></li>
+  </ul>
+
+  <div class="nav-controls">
+    <button class="nav-btn" id="dev-toggle" title="Toggle Developer Mode">DEV MODE</button>
+    <button class="nav-btn" id="theme-toggle" title="Toggle Light/Dark Mode">☀ LIGHT</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about"      onclick="closeMobile()">About</a>
+  <a href="#skills"     onclick="closeMobile()">Skills</a>
+  <a href="#projects"   onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Journey</a>
+  <a href="#terminal-section" onclick="closeMobile()">Terminal</a>
+  <a href="#contact"    onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+  ██   HERO
+═══════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid" id="hero-grid"></div>
+  <canvas class="hero-particles" id="particles-canvas"></canvas>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">SONAM NARULA &nbsp;·&nbsp; JAIPUR, INDIA</div>
+
+    <h1 class="hero-headline">
+      <span>INVISIBLE</span>
+      <span class="line2">UNTIL</span>
+      <span class="line3">UNDENIABLE.</span>
+    </h1>
+
+    <p class="hero-subtext">
+      <span id="typed-text"></span><span class="typed-cursor"></span>
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary magnetic">VIEW WORK →</a>
+      <a href="#contact"  class="btn-outline magnetic">LET'S TALK</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="num" id="stat-streak">0</div>
+      <div class="lbl">DAY STREAK</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num" id="stat-problems">0</div>
+      <div class="lbl">PROBLEMS SOLVED</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num" id="stat-commits">0</div>
+      <div class="lbl">COMMITS</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+  ██   ABOUT
+═══════════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="section-label">01 — WHO I AM</div>
+  <h2 class="section-title reveal">THE STORY</h2>
+
+  <div class="about-grid">
+
+    <!-- Visual Card -->
+    <div class="about-visual reveal-left">
+      <div class="about-card">
+        <div class="about-avatar">SN</div>
+        <div class="about-name">Sonam Narula</div>
+        <div class="about-role">// aspiring_software_developer.js</div>
+        <div class="divider"></div>
+        <div style="font-family:var(--font-mono);font-size:0.78rem;color:var(--text-dim);line-height:1.8">
+          <div><span style="color:var(--primary)">location</span>  → Jaipur, India 🇮🇳</div>
+          <div><span style="color:var(--primary)">focus</span>     → Web Dev + DSA</div>
+          <div><span style="color:var(--primary)">streak</span>    → <span style="color:var(--gold)">200+ days 🔥</span></div>
+          <div><span style="color:var(--primary)">status</span>    → <span style="color:#4caf50">available</span></div>
+          <div><span style="color:var(--primary)">goal</span>      → financial independence</div>
+        </div>
+        <div class="about-tags">
+          <span class="tag">Discipline</span>
+          <span class="tag">Consistency</span>
+          <span class="tag">Builder</span>
+          <span class="tag">Problem Solver</span>
+          <span class="tag">Self-Taught</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div class="about-text reveal-right">
+      <p>
+        I'm not the loudest developer in the room —<br>
+        I'm the one who <strong>ships</strong>.
+      </p>
+      <p>
+        Most people say they'll start coding tomorrow.
+        I started, and never stopped. A <span class="highlight">200+ day coding streak</span>
+        isn't a flex — it's proof that I treat software development
+        like a craft, not a hobby.
+      </p>
+      <p>
+        I'm building toward one goal: <strong>financial independence through code</strong>.
+        That means mastering fundamentals, shipping real products,
+        and solving problems that actually matter.
+      </p>
+      <p>
+        From HTML/CSS layouts to C++ algorithms — I'm not just
+        learning syntax. I'm building the <strong>mental models</strong>
+        that separate good developers from great ones.
+      </p>
+
+      <div class="about-metrics">
+        <div class="metric reveal">
+          <div class="val gradient-text">200+</div>
+          <div class="key">DAY STREAK</div>
+        </div>
+        <div class="metric reveal">
+          <div class="val gradient-text">3+</div>
+          <div class="key">LIVE PROJECTS</div>
+        </div>
+        <div class="metric reveal">
+          <div class="val gradient-text">∞</div>
+          <div class="key">WILL TO BUILD</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+  ██   SKILLS
+═══════════════════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="section-label">02 — TOOLKIT</div>
+  <h2 class="section-title reveal">WHAT I USE</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card reveal" data-delay="0">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">HTML5 / CSS3</div>
+      <div class="skill-desc">Semantic markup, Flexbox, Grid, responsive design, animations, and accessibility.</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div>
+      <div class="skill-pct">88%</div>
+    </div>
+
+    <div class="skill-card reveal" data-delay="100">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">JavaScript (ES6+)</div>
+      <div class="skill-desc">DOM manipulation, async/await, closures, event handling, and browser APIs.</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
+      <div class="skill-pct">80%</div>
+    </div>
+
+    <div class="skill-card reveal" data-delay="200">
+      <div class="skill-icon">⚙️</div>
+      <div class="skill-name">C++ / DSA</div>
+      <div class="skill-desc">Data structures, algorithms, time complexity analysis, and competitive problem solving.</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div>
+      <div class="skill-pct">75%</div>
+    </div>
+
+    <div class="skill-card reveal" data-delay="300">
+      <div class="skill-icon">🧩</div>
+      <div class="skill-name">Problem Solving</div>
+      <div class="skill-desc">Pattern recognition, algorithmic thinking, debugging, and systematic decomposition.</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+      <div class="skill-pct">82%</div>
+    </div>
+
+    <div class="skill-card reveal" data-delay="400">
+      <div class="skill-icon">🔧</div>
+      <div class="skill-name">Git / GitHub</div>
+      <div class="skill-desc">Version control, branching, pull requests, and collaborative development workflows.</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="72"></div></div>
+      <div class="skill-pct">72%</div>
+    </div>
+
+    <div class="skill-card reveal" data-delay="500">
+      <div class="skill-icon">🎯</div>
+      <div class="skill-name">Discipline</div>
+      <div class="skill-desc">200+ day streak. Daily practice. Consistent iteration. No days off from growing.</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="99"></div></div>
+      <div class="skill-pct">99%</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+  ██   PROJECTS
+═══════════════════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="section-label">03 — WORK</div>
+  <h2 class="section-title reveal">THINGS I BUILT</h2>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card reveal" data-delay="0">
+      <div class="project-preview" style="background:linear-gradient(135deg,#0d0d1a,#0a1a2e)">
+        <div class="project-preview-inner">TODO</div>
+        <div class="project-overlay"></div>
+        <div class="project-badge">FEATURED</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">TaskFlow — To-Do App</div>
+        <div class="project-desc">
+          A clean, persistent task manager with priority flags, categories,
+          and local storage sync. Built to solve my own productivity chaos.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">HTML</span>
+          <span class="stack-tag">CSS</span>
+          <span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">LocalStorage</span>
+        </div>
+        <div class="project-footer">
+          <a class="project-link" href="https://github.com/SonamNarula" target="_blank">⬡ GitHub →</a>
+          <button class="project-details-btn" onclick="openModal('taskflow')">Behind the Code</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card reveal" data-delay="150">
+      <div class="project-preview" style="background:linear-gradient(135deg,#0d1a0d,#0a2a1a)">
+        <div class="project-preview-inner">⟨/⟩</div>
+        <div class="project-overlay"></div>
+        <div class="project-badge">WEB</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Calculator — DOM Mastery</div>
+        <div class="project-desc">
+          A fully keyboard-aware calculator that handles operator precedence,
+          chained operations, and edge cases. Not a tutorial project — built from scratch.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">HTML</span>
+          <span class="stack-tag">CSS Grid</span>
+          <span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">Regex</span>
+        </div>
+        <div class="project-footer">
+          <a class="project-link" href="https://github.com/SonamNarula" target="_blank">⬡ GitHub →</a>
+          <button class="project-details-btn" onclick="openModal('calculator')">Behind the Code</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card reveal" data-delay="300">
+      <div class="project-preview" style="background:linear-gradient(135deg,#1a0d0d,#2a0a12)">
+        <div class="project-preview-inner">DSA</div>
+        <div class="project-overlay"></div>
+        <div class="project-badge">C++</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">DSA Visualizer Concepts</div>
+        <div class="project-desc">
+          C++ implementations of core data structures — linked lists, stacks,
+          queues, binary search trees — with custom input/output for each.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">C++</span>
+          <span class="stack-tag">OOP</span>
+          <span class="stack-tag">Templates</span>
+          <span class="stack-tag">STL</span>
+        </div>
+        <div class="project-footer">
+          <a class="project-link" href="https://github.com/SonamNarula" target="_blank">⬡ GitHub →</a>
+          <button class="project-details-btn" onclick="openModal('dsa')">Behind the Code</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+  ██   EXPERIENCE / JOURNEY
+═══════════════════════════════════════════════════════════ -->
+<section id="experience">
+  <div class="section-label">04 — JOURNEY</div>
+  <h2 class="section-title reveal">THE TIMELINE</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item reveal">
+      <div class="timeline-date">2023 — THE BEGINNING</div>
+      <div class="timeline-title">First Line of Code</div>
+      <div class="timeline-sub">HTML &amp; CSS → Building the foundation</div>
+      <div class="timeline-desc">
+        Started with "Hello World" and never looked back. Spent months building
+        static pages, learning how browsers think, and discovering that design
+        and logic can live in the same file.
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-date">2023 — GOING DEEPER</div>
+      <div class="timeline-title">JavaScript Unlocked</div>
+      <div class="timeline-sub">Interactivity → DOM → Real Applications</div>
+      <div class="timeline-desc">
+        The moment JS clicked was the moment everything changed. Built my first
+        interactive projects — a calculator, a todo app — and understood why
+        developers call JavaScript the "magic" of the web.
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-date">2024 — THE DISCIPLINE PHASE</div>
+      <div class="timeline-title">200+ Day Coding Streak</div>
+      <div class="timeline-sub">Consistency → Daily Practice → C++ &amp; DSA</div>
+      <div class="timeline-desc">
+        Made a deal with myself: code every single day, no exceptions. That streak
+        unlocked a new level of learning discipline. Started diving into C++,
+        data structures, and algorithmic thinking — the foundation of real engineering.
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-date">2024–2025 — NOW</div>
+      <div class="timeline-title">Building Real Things</div>
+      <div class="timeline-sub">Projects → Portfolio → The World</div>
+      <div class="timeline-desc">
+        Stopped tutorial hell. Started building. Every project is a real attempt
+        to solve a real problem. The goal is clear: become undeniably good,
+        then go find the opportunities that match.
+      </div>
+    </div>
+
+    <div class="timeline-item reveal" style="opacity:0.5">
+      <div class="timeline-date">NEXT — THE GOAL</div>
+      <div class="timeline-title">Financial Independence Through Code</div>
+      <div class="timeline-sub">Full-Stack → Open Source → Career</div>
+      <div class="timeline-desc">
+        The destination is clear. The path is already being walked.
+        Watch this space.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+  ██   TERMINAL
+═══════════════════════════════════════════════════════════ -->
+<section id="terminal-section">
+  <div class="section-label">05 — INTERACT</div>
+  <h2 class="section-title reveal">TERMINAL</h2>
+  <p class="reveal" style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.82rem;margin-bottom:0.5rem">
+    // Type a command below. Try: <span style="color:var(--primary)">help</span>
+  </p>
+
+  <div class="terminal-wrap reveal">
+    <div class="terminal-header">
+      <div class="dot r"></div>
+      <div class="dot y"></div>
+      <div class="dot g"></div>
+      <div class="terminal-title">sonam@portfolio:~</div>
+    </div>
+    <div class="terminal-body" id="terminal-body"></div>
+    <div class="terminal-input-row">
+      <span class="t-prompt">sonam@portfolio:~$</span>
+      <input
+        type="text"
+        class="terminal-input"
+        id="terminal-input"
+        placeholder="type a command..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+  ██   CONTACT
+═══════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="section-label">06 — LET'S CONNECT</div>
+  <h2 class="section-title reveal">SAY HELLO</h2>
+
+  <div class="contact-grid">
+
+    <div class="contact-info reveal-left">
+      <h3>Ready to build<br>something real?</h3>
+      <p>
+        I'm open to internships, freelance projects, collaborations,
+        and conversations about code. If you're building something worth
+        building — I want to hear about it.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:sonamnarula2108@gmail.com" class="contact-link">
+          <div class="contact-link-icon">✉</div>
+          <span>sonamnarula2108@gmail.com</span>
+        </a>
+        <a href="https://github.com/SonamNarula" target="_blank" class="contact-link">
+          <div class="contact-link-icon">⬡</div>
+          <span>github.com/SonamNarula</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sonam-narula-402a60285/" target="_blank" class="contact-link">
+          <div class="contact-link-icon">in</div>
+          <span>linkedin.com/in/sonam-narula</span>
+        </a>
+        <a href="#" class="contact-link">
+          <div class="contact-link-icon">📍</div>
+          <span>Jaipur, Rajasthan, India</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal-right">
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-input" id="f-name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" id="f-email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" id="f-msg" placeholder="Tell me what you're building..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit magnetic">SEND MESSAGE →</button>
+        <div class="form-success" id="form-success">
+          ✓ Message received. I'll get back to you soon!
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-copy">© 2025 Sonam Narula — All rights reserved.</div>
+  <div class="footer-note">
+    Built with <span>discipline &amp; caffeine</span> · No frameworks harmed
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROJECT MODALS
+═══════════════════════════════════════════════════════════ -->
+
+<!-- TaskFlow Modal -->
+<div class="modal-overlay" id="modal-taskflow" onclick="handleModalClick(event,'taskflow')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">TaskFlow</div>
+      <button class="modal-close" onclick="closeModal('taskflow')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Problem Solved</div>
+        <p>I was using sticky notes and random files to track tasks — total chaos. Existing apps were either too complex or didn't save state. I needed something minimal, fast, and persistent.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Approach</div>
+        <p>Designed the data model first: each task has an ID, title, priority, category, and completion state. Used localStorage with JSON serialization to persist between sessions. Built a MVC-style separation — data layer, render layer, event layer.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Key Logic</div>
+        <div class="code-block">
+          <div class="code-block-header">
+            <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+            <span class="code-block-title">taskflow.js — core save/load</span>
+          </div>
+          <pre><span class="cmt">// Serialize tasks to localStorage</span>
+<span class="kw">const</span> <span class="fn">saveTasks</span> = (<span class="cls">tasks</span>) => {
+  <span class="cls">localStorage</span>.<span class="fn">setItem</span>(<span class="str">'taskflow_data'</span>, <span class="cls">JSON</span>.<span class="fn">stringify</span>(<span class="cls">tasks</span>));
+};
+
+<span class="kw">const</span> <span class="fn">loadTasks</span> = () => {
+  <span class="kw">try</span> {
+    <span class="kw">return</span> <span class="cls">JSON</span>.<span class="fn">parse</span>(<span class="cls">localStorage</span>.<span class="fn">getItem</span>(<span class="str">'taskflow_data'</span>)) ?? [];
+  } <span class="kw">catch</span> { <span class="kw">return</span> []; }
+};
+
+<span class="cmt">// Render only changed nodes — no full re-render</span>
+<span class="kw">const</span> <span class="fn">diffRender</span> = (<span class="cls">prev</span>, <span class="cls">next</span>) => {
+  <span class="cls">next</span>.<span class="fn">forEach</span>((<span class="cls">task</span>, <span class="cls">i</span>) => {
+    <span class="kw">if</span> (!<span class="fn">isEqual</span>(<span class="cls">prev</span>[<span class="cls">i</span>], <span class="cls">task</span>)) <span class="fn">updateNode</span>(<span class="cls">i</span>, <span class="cls">task</span>);
+  });
+};</pre>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Features</div>
+        <p>Priority levels (High/Med/Low) with color coding · Category grouping · Drag-to-reorder · Persistent state · Keyboard shortcuts · Task completion animation</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Calculator Modal -->
+<div class="modal-overlay" id="modal-calculator" onclick="handleModalClick(event,'calculator')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">Calculator</div>
+      <button class="modal-close" onclick="closeModal('calculator')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Problem Solved</div>
+        <p>Every tutorial calculator breaks on chained operations: 3 + 4 × 2. Mine handles operator precedence correctly, supports keyboard input, and deals with edge cases like dividing by zero gracefully.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Key Logic</div>
+        <div class="code-block">
+          <div class="code-block-header">
+            <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+            <span class="code-block-title">calculator.js — eval engine</span>
+          </div>
+          <pre><span class="cmt">// Safe expression evaluator (no eval())</span>
+<span class="kw">function</span> <span class="fn">calculate</span>(<span class="cls">expr</span>) {
+  <span class="kw">const</span> <span class="cls">tokens</span> = <span class="fn">tokenize</span>(<span class="cls">expr</span>);
+  <span class="kw">const</span> <span class="cls">rpn</span>    = <span class="fn">shuntingYard</span>(<span class="cls">tokens</span>); <span class="cmt">// Dijkstra</span>
+  <span class="kw">return</span> <span class="fn">evalRPN</span>(<span class="cls">rpn</span>);
+}
+
+<span class="cmt">// Handle division-by-zero explicitly</span>
+<span class="kw">if</span> (<span class="cls">op</span> === <span class="str">'/'</span> && <span class="cls">b</span> === <span class="num">0</span>) <span class="kw">return</span> <span class="str">'ERR: ÷0'</span>;
+
+<span class="cmt">// Keyboard support</span>
+<span class="cls">document</span>.<span class="fn">addEventListener</span>(<span class="str">'keydown'</span>, <span class="cls">e</span> => {
+  <span class="kw">if</span> (<span class="cls">e</span>.<span class="cls">key</span> === <span class="str">'Enter'</span>) <span class="fn">calculate</span>(<span class="cls">display</span>.<span class="cls">value</span>);
+  <span class="kw">if</span> (<span class="str">'0123456789+-*/.'</span>.<span class="fn">includes</span>(<span class="cls">e</span>.<span class="cls">key</span>)) <span class="fn">append</span>(<span class="cls">e</span>.<span class="cls">key</span>);
+});</pre>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Features</div>
+        <p>Shunting-yard algorithm for operator precedence · Full keyboard support · Division-by-zero error handling · History log · Responsive grid layout</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DSA Modal -->
+<div class="modal-overlay" id="modal-dsa" onclick="handleModalClick(event,'dsa')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">DSA Implementations</div>
+      <button class="modal-close" onclick="closeModal('dsa')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Approach</div>
+        <p>Instead of memorizing solutions, I rebuild data structures from scratch in C++ — understanding every pointer, every edge case. This forces genuine understanding over superficial recall.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Key Implementation</div>
+        <div class="code-block">
+          <div class="code-block-header">
+            <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+            <span class="code-block-title">linked_list.cpp — custom implementation</span>
+          </div>
+          <pre><span class="kw">template</span>&lt;<span class="kw">typename</span> <span class="cls">T</span>&gt;
+<span class="kw">class</span> <span class="cls">LinkedList</span> {
+  <span class="kw">struct</span> <span class="cls">Node</span> {
+    <span class="cls">T</span> data; <span class="cls">Node</span>* next = <span class="kw">nullptr</span>;
+    <span class="fn">Node</span>(<span class="cls">T</span> val) : data(val) {}
+  };
+  <span class="cls">Node</span>* head = <span class="kw">nullptr</span>;
+
+<span class="kw">public</span>:
+  <span class="kw">void</span> <span class="fn">push</span>(<span class="cls">T</span> val) {
+    <span class="cls">Node</span>* n = <span class="kw">new</span> <span class="cls">Node</span>(val);
+    <span class="kw">if</span> (!head) { head = n; <span class="kw">return</span>; }
+    <span class="cls">Node</span>* cur = head;
+    <span class="kw">while</span>(cur->next) cur = cur->next;
+    cur->next = n;
+  }
+  <span class="cmt">// O(n) traversal — no shortcuts</span>
+  <span class="kw">void</span> <span class="fn">print</span>() {
+    <span class="kw">for</span>(<span class="kw">auto</span> c = head; c; c = c->next)
+      std::cout &lt;&lt; c->data &lt;&lt; <span class="str">" → "</span>;
+  }
+};</pre>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Structures Built</div>
+        <p>Singly &amp; Doubly Linked Lists · Stack (array + linked) · Queue &amp; Deque · Binary Search Tree · Min/Max Heap · Hash Table with chaining</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     EASTER EGG (Konami Code)
+═══════════════════════════════════════════════════════════ -->
+<div id="easter-egg">
+  <div class="egg-matrix" id="egg-matrix"></div>
+  <h2>YOU FOUND IT.</h2>
+  <p>↑↑↓↓←→←→BA — the classic. Nice work, dev 👾</p>
+  <p style="color:var(--accent);font-family:var(--font-mono);font-size:0.8rem">
+    "The best code is the code that doesn't exist yet — go build it."
+  </p>
+  <button class="egg-close" onclick="closeEgg()">[ CLOSE ]</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
