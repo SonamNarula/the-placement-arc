@@ -2,18 +2,27 @@
 
 <div align="center">
 
-# The Placement Arc
-### one deploy target. everything else is just a metric.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:ff2d75,100:000000&height=190&section=header&text=THE%20PLACEMENT%20ARC&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=alpha%20energy%20%C2%B7%20zero%20apologies%20%C2%B7%20one%20deploy%20target&descSize=13&descAlignY=58&descColor=ffd1e3" />
+
+### not nervous. just optimized.
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=14&pause=2200&color=FF2D75&center=true&vCenter=true&width=750&height=30&lines=alpha+energy%2C+zero+apologies.;confidence%3A+compiled+successfully.;soft+launch%3F+never+heard+of+her.;one+deploy+target%3A+offer_letter.json.)](https://git.io/typing-svg)
 
 **Sonam Narula** · B.Tech CSE '27 · JECRC University
 
 <br/>
 
-![pipeline](https://img.shields.io/badge/pipeline-passing-2ea44f?style=flat-square&logo=githubactions&logoColor=white&labelColor=1a1a1a)
-&nbsp;![runner](https://img.shields.io/badge/runner__pool-alpha--m-1a1a1a?style=flat-square)
-&nbsp;![builds](https://img.shields.io/badge/builds-15%2F15_green-2ea44f?style=flat-square&labelColor=1a1a1a)
-&nbsp;![coverage](https://img.shields.io/badge/coverage-94.4%25-2ea44f?style=flat-square&labelColor=1a1a1a)
+![pipeline](https://img.shields.io/badge/pipeline-passing-ff2d75?style=flat-square&logo=githubactions&logoColor=white&labelColor=1a1a1a)
+&nbsp;![batch](https://img.shields.io/badge/batch-alpha--m-ffd700?style=flat-square&labelColor=1a1a1a)
+&nbsp;![rank](https://img.shields.io/badge/rank-top__tier-ffd700?style=flat-square&labelColor=1a1a1a)
+&nbsp;![builds](https://img.shields.io/badge/builds-15%2F15_green-ff2d75?style=flat-square&labelColor=1a1a1a)
+&nbsp;![coverage](https://img.shields.io/badge/coverage-94.4%25-ff2d75?style=flat-square&labelColor=1a1a1a)
 &nbsp;![day](https://img.shields.io/badge/day-047-1a1a1a?style=flat-square)
+
+<br/>
+
+**alpha-m is the top batch. there's no tier above it.**
+**it still isn't the goal — the offer letter is.**
 
 </div>
 
@@ -30,7 +39,7 @@ pipeline:
   owner: Sonam Narula
   repo: the-placement-arc
   branch: placement/CRT-2026
-  runner_pool: alpha-m          # promoted from: standard-6m — not the target, just telemetry
+  runner_pool: alpha-m          # top tier — promoted from standard-6m. still not the target.
   current_stage: dsa-tests
   day: 47
   target: offer_letter.json     # the only field that actually matters
@@ -50,17 +59,32 @@ $ ci-bot --event runner-promotion
 
 [2026-05-16 09:00]  EVENT  runner_pool.upgrade
   from   : standard-6m
-  to     : alpha-m
+  to     : alpha-m            (top tier — no pool ranks above this one)
   reason : 15 consecutive green builds
            mean coverage 94.4%
            3 builds at 100% coverage
 
 note: runner pools aren't requested. they're computed
-      from build history on every push. this one just
-      ran the numbers and moved itself.
+      from build history on every push. this one ran
+      the numbers and moved itself to the top tier.
 
-      but the deploy target hasn't changed. it never was
-      "alpha-m." it's still offer_letter.json.
+      that's the ceiling on tiers. it was never the
+      ceiling on goals. the deploy target hasn't moved.
+      it never was "alpha-m." it's still offer_letter.json.
+```
+
+<br/>
+
+```
+┌────────────────────────────────────────────────────────┐
+│  LESSON LOGGED                                         │
+│                                                        │
+│  alpha-m is the top batch. there's no tier above it.   │
+│  and it still isn't the finish line.                   │
+│                                                        │
+│  batches are checkpoints. they don't get a victory lap.│
+│  the only deploy that counts is the offer letter.      │
+└────────────────────────────────────────────────────────┘
 ```
 
 <br/>
@@ -114,6 +138,15 @@ note: runner pools aren't requested. they're computed
 # the only failure mode this pipeline actually has is the
 # quiet kind — the one where it just stops running. that
 # hasn't happened in 47 days, and it isn't scheduled to.
+
+# confidence was never a metric this pipeline waited to feel —
+# it shipped first, felt sure after.
+
+# being the loudest build in the room was never the goal.
+# being the one still running when review starts was.
+
+# top tier is still just a tier. it doesn't deploy anything
+# on its own. the offer letter does that, or nothing does.
 ```
 
 <br/>
@@ -176,5 +209,9 @@ note: runner pools aren't requested. they're computed
 ```
 
 <sub>15 builds · 15 green · 0 skipped jobs · runner pool: alpha-m</sub>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:ff2d75,100:000000&height=120&section=footer" />
 
 </div>
