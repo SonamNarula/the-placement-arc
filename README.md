@@ -6,7 +6,7 @@
 
 ### still compiling. one day at a time.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&pause=2200&color=8E8E93&center=true&vCenter=true&width=750&height=30&lines=batches+change.+the+routine+doesn%27t.;confidence%3A+compiled+successfully.;fifteen+tests+logged.+zero+skipped.;one+deploy+target%3A+offer_letter.json.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&pause=2200&color=8E8E93&center=true&vCenter=true&width=750&height=30&lines=batches+change.+the+routine+doesn%27t.;confidence%3A+compiled+successfully.;sixteen+tests+logged.+zero+skipped.;one+deploy+target%3A+offer_letter.json.)](https://git.io/typing-svg)
 
 **Sonam Narula** · B.Tech CSE '27 · JECRC University
 
@@ -14,9 +14,9 @@
 
 ![pipeline](https://img.shields.io/badge/pipeline-passing-e5e5ea?style=flat-square&logo=githubactions&logoColor=1c1c1e&labelColor=2c2c2e)
 &nbsp;![batch](https://img.shields.io/badge/batch-6m%20%E2%86%92%20alpha--m-e5e5ea?style=flat-square&labelColor=2c2c2e)
-&nbsp;![builds](https://img.shields.io/badge/builds-15%2F15_green-e5e5ea?style=flat-square&labelColor=2c2c2e)
-&nbsp;![coverage](https://img.shields.io/badge/coverage-94.4%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
-&nbsp;![day](https://img.shields.io/badge/day-047-e5e5ea?style=flat-square&labelColor=2c2c2e)
+&nbsp;![builds](https://img.shields.io/badge/builds-16%2F16_green-e5e5ea?style=flat-square&labelColor=2c2c2e)
+&nbsp;![coverage](https://img.shields.io/badge/coverage-94.8%25-e5e5ea?style=flat-square&labelColor=2c2c2e)
+&nbsp;![day](https://img.shields.io/badge/day-083-e5e5ea?style=flat-square&labelColor=2c2c2e)
 
 <sub>pool upgraded to alpha-m — top tier, no rank above it. target unchanged: offer_letter.json.</sub>
 
@@ -37,7 +37,7 @@ pipeline:
   branch: placement/CRT-2026
   runner_pool: alpha-m          # promoted from standard-6m. still not the target.
   current_stage: dsa-tests
-  day: 47
+  day: 83
   target: offer_letter.json     # the only field that actually matters
   status: building
 ```
@@ -59,6 +59,12 @@ $ ci-bot --event runner-promotion
   reason : 15 consecutive green builds
            mean coverage 94.4%
            3 builds at 100% coverage
+
+[2026-06-21 06:15]  EVENT  build.recorded
+  job    : G1 CBT-1 — Arrays
+  result : 50 / 50, 100.0% coverage
+  streak : 16 consecutive green builds
+           4 builds at 100% coverage
 
 note: runner pools aren't requested. they're computed
       from build history on every push. this one ran
@@ -129,12 +135,12 @@ note: runner pools aren't requested. they're computed
 # there's no retry_limit set on effort here. only on patience,
 # and that's still being tuned.
 
-# one test score is a sample size of one. fifteen green builds
-# in a row, averaging 94.4%, is a distribution you can trust.
+# one test score is a sample size of one. sixteen green builds
+# in a row, averaging 94.8%, is a distribution you can trust.
 
 # the only failure mode this pipeline actually has is the
 # quiet kind — the one where it just stops running. that
-# hasn't happened in 47 days, and it isn't scheduled to.
+# hasn't happened in 83 days, and it isn't scheduled to.
 
 # being the loudest build in the room was never the goal.
 # being the one still running when review starts was.
@@ -168,6 +174,7 @@ note: runner pools aren't requested. they're computed
 | `#013` | 14 May 2026 | [DSA Daily Test](./CBT%2013.png) | 45 / 45 | 100.0% | **PASS ★** |
 | `#014` | 15 May 2026 | [Linked List](./CBT%2014.png) | 43 / 45 | 95.6% | **PASS** |
 | `#015` | 16 May 2026 | [DSA Daily Test](./CBT%2015.png) | 43 / 45 | 95.6% | **PASS** |
+| `#016` | 21 Jun 2026 | [G1 CBT-1 — Arrays](./G1%20CBT-1.png) | 50 / 50 | 100.0% | **PASS ★** |
 
 <br/>
 
@@ -202,7 +209,7 @@ note: runner pools aren't requested. they're computed
 └──────────────────────────────────────────────┘
 ```
 
-<sub>15 builds · 15 green · 0 skipped jobs · runner pool: alpha-m</sub>
+<sub>16 builds · 16 green · 0 skipped jobs · runner pool: alpha-m</sub>
 
 <br/>
 
